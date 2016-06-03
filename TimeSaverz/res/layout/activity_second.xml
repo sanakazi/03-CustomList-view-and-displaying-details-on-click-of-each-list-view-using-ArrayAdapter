@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:background="#0C233B" >
+
+    <ImageView
+        android:id= "@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/contact"
+        />
+    
+    <TextView
+         android:id= "@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hie"
+        android:textColor="#FFD12A"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_toRightOf="@id/img1"
+        android:layout_marginTop="20dp"
+   
+        />
+    
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp" >
+    
+<Button 
+    android:layout_weight="1"
+    android:id="@+id/btn1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="OK"
+    android:background="#FFD12A"
+    android:paddingLeft="10dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+   />
+
+<Button
+    android:layout_weight="1"
+    android:id="@+id/btn2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="CANCEL"
+     android:background="#FFD12A"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp" />
+  
+    </LinearLayout>
+    
+    <RelativeLayout 
+     android:id="@+id/rl2"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_below="@id/ll2"
+      android:paddingTop="50dp"
+      android:background="#24384e"
+    >
+      
+        
+    <ImageView
+        android:id= "@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/detail_contact"
+        android:layout_marginLeft="20dp"
+        />
+        <TextView
+         android:id= "@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact details"
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@id/img2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        />   
+         <TextView
+         android:id= "@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hie"
+        android:textColor="#FFFFFF"
+         android:layout_toRightOf="@id/img2"
+        android:layout_below="@id/tv2"
+        android:layout_marginLeft="20dp"/>   
+        
+    </RelativeLayout>
+
+</RelativeLayout>
